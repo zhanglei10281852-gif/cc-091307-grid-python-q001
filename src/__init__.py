@@ -1,1 +1,41 @@
 """积水隐患巡查领域包。"""
+
+from .service import (
+    CLOSED,
+    CRITICAL,
+    DISPATCHED,
+    HIGH,
+    LOW,
+    MEDIUM,
+    MERGED,
+    PENDING,
+    PENDING_SUPPLEMENT,
+    VERIFIED,
+    InvalidTransition,
+    NotFoundError,
+    Service,
+    ServiceError,
+    STATUS_LABELS,
+    SEVERITY_LABELS,
+    ValidationError,
+)
+
+__all__ = [
+    "Service",
+    "ServiceError",
+    "NotFoundError",
+    "ValidationError",
+    "InvalidTransition",
+    "STATUS_LABELS",
+    "SEVERITY_LABELS",
+    "PENDING_SUPPLEMENT",
+    "PENDING",
+    "VERIFIED",
+    "DISPATCHED",
+    "CLOSED",
+    "MERGED",
+    "CRITICAL",
+    "HIGH",
+    "MEDIUM",
+    "LOW",
+]
